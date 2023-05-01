@@ -42,6 +42,7 @@ pub fn add_task(
         message.group,
         TaskStatus::Locked,
         message.dependencies,
+        message.priority,
         message.label,
     );
 

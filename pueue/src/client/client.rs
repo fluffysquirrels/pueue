@@ -390,6 +390,7 @@ impl Client {
                 group,
                 delay_until,
                 dependencies,
+                priority,
                 label,
                 print_task_id,
             } => {
@@ -419,6 +420,7 @@ impl Client {
                     group: group_or_default(group),
                     enqueue_at: *delay_until,
                     dependencies: dependencies.to_vec(),
+                    priority: priority.to_owned(),
                     label: label.clone(),
                     print_task_id: *print_task_id,
                 }

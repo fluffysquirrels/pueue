@@ -141,6 +141,7 @@ mod fixtures {
             status,
             Vec::new(),
             None,
+            None,
         )
     }
 

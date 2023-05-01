@@ -19,6 +19,7 @@ pub fn build_task() -> Task {
         TaskStatus::Queued,
         Vec::new(),
         None,
+        None,
     )
 }
 

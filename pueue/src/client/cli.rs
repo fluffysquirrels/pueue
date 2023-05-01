@@ -52,6 +52,11 @@ pub enum SubCommand {
         #[arg(name = "after", short, long, num_args(1..))]
         dependencies: Vec<usize>,
 
+        /// Start the task once all specified tasks have successfully finished.
+        /// As soon as one of the dependencies fails, this task will fail as well.
+        #[arg(name = "after", short, long, num_args(1..))]
+        priority: Option<usize>,
+
         /// Add some information for yourself.
         /// This string will be shown in the "status" table.
         /// There's no additional logic connected to it.
